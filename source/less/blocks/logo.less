@@ -1,0 +1,41 @@
+.logo {
+  display: block;
+
+  svg {
+    &:hover path {
+      fill: @bright-purplish-red;
+    }
+
+    &:active path {
+      fill: @white-a3;
+    }
+  }
+}
+
+.logo__stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.logo__glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  &__desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}

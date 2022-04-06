@@ -1,0 +1,27 @@
+.toggles {
+  width: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggles__toggle {
+  display: inline-block;
+  border: none;
+  margin-right: 4px;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: @granite-gray-a3;
+
+  &--current {
+    width: 10px;
+    height: 10px;
+    background: @white;
+    border: 3px solid @granite-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}

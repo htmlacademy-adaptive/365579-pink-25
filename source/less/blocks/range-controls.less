@@ -1,0 +1,31 @@
+.range-controls {
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
+  }
+}
+
+.range-controls__bar--current {
+  display: block;
+}
+
+.range-controls__bar {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.range-controls__toggle {
+  position: absolute;
+  width: 14px;
+  top: -6px;
+  height: 14px;
+  border: 2px solid @bright-purplish-red;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.range-controls__max {
+  left: 80%;
+}

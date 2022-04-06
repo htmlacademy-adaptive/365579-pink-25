@@ -1,0 +1,113 @@
+.apps {
+  padding-top: 28px;
+  background-color: @dark-blue-blue;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 36px;
+  }
+}
+
+.apps__centerer-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-right: 120px;
+  }
+}
+
+.apps__download {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+    font-size: 21px;
+  }
+
+  &:hover {
+    color: @bright-purplish-red;
+    background-color: @white;
+    box-shadow: 0 5px 7px @black-a7;
+  }
+
+  &:active {
+    color: @bright-purplish-red-a3;
+    background-color: @white;
+    box-shadow: 0 5px 7px @black-a7;
+  }
+}
+
+.apps__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin: 32px 0;
+    margin-top: 45px;
+    margin-left: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 68px;
+    margin-left: 30px;
+  }
+}
+
+.apps__link {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--apple {
+    background-image: url("../img/icons/apple-logo.svg");
+    background-size: 47px 56px;
+  }
+
+  &--android {
+    background-image: url("../img/icons/android-logo.svg");
+    background-size: 43px 47px;
+  }
+
+  &--windows {
+    background-image: url("../img/icons/microsoft-logo.svg");
+    background-size: 44px 41px;
+  }
+}
+
+.apps__description {
+  margin: auto;
+  padding-bottom: 31px;
+  width: 280px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-bottom: 41px;
+  }
+}
