@@ -1,0 +1,52 @@
+.tariffs {
+  position: relative;
+  padding-top: 136px;
+  padding-bottom: 45px;
+  background-color: @light-grey;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: @granite-gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-180deg);
+    width: 100%;
+    height: 56px;
+    background-color: @white;
+    clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 100%);
+
+    @media (min-width: @desktop-width) {
+      height: 100px;
+      clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.tariffs__wrapper {
+  overflow: hidden;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.tariffs__toggles {
+  margin-top: 39px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

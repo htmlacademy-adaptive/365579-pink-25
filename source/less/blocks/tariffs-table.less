@@ -1,0 +1,150 @@
+.tariffs-table {
+  width: 350%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-62.5%);
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    transform: translateX(-50%);
+  }
+}
+
+.tariffs-table__head {
+  background-color: @granite-gray;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tariffs-table__type {
+  padding-top: 10px;
+  padding-bottom: 28px;
+
+  span {
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &:first-of-type {
+    background-color: @light-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 16px;
+  }
+}
+
+.tariffs-table__type--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 74px;
+    height: 74px;
+    z-index: 0;
+    background-image: linear-gradient(-45deg, transparent 50%, #d22856 50%, #d22856 72%, transparent 72%);
+
+    @media (min-width: @tablet-width) {
+      width: 61px;
+      height: 61px;
+    }
+  }
+
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 74px;
+    height: 74px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    z-index: 1;
+    transform: rotate(-45deg);
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      width: 61px;
+      height: 61px;
+    }
+  }
+}
+
+.tariffs-table__cell {
+  width: 276px;
+  background-color: @white;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  span {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+    text-transform: none;
+    padding-left: 15px;
+  }
+}
+
+.tariffs-table__cell--check,
+.tariffs-table__cell--uncheck {
+  position: relative;
+  padding: 0 20px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    top: 20px;
+    right: 16px;
+    background-image: url("../img/icons/yes-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      right: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 100px;
+    }
+  }
+}
+
+.tariffs-table__cell--uncheck {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 14px;
+    right: 20px;
+    background-image: url("../img/icons/no-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      right: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 100px;
+    }
+  }
+}
