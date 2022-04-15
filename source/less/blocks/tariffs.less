@@ -1,7 +1,5 @@
 .tariffs {
   position: relative;
-  padding-top: 136px;
-  padding-bottom: 45px;
   background-color: @light-grey;
   font-weight: 700;
   font-size: 16px;
@@ -19,27 +17,34 @@
     background-color: @white;
     clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 100%);
 
+    @media (min-width: @tablet-width) {
+      clip-path: polygon(0 75%, 100% 0, 100% 100%, 0 100%);
+    }
+
     @media (min-width: @desktop-width) {
       height: 100px;
       clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 0;
   }
 }
 
 .tariffs__wrapper {
   overflow: hidden;
   padding: 0;
+  padding-top: 136px;
+  padding-bottom: 45px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 110px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 120px;
+    padding-top: 156px;
+    padding-bottom: 96px;
   }
 }
 

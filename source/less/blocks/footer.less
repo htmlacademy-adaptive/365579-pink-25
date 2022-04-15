@@ -1,6 +1,14 @@
 .footer__logo {
   margin: 0;
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
+  }
 }
 
 .footer__link {
@@ -28,4 +36,27 @@
   margin: 0;
   margin-top: 40px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 38px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+.footer__copyright {
+  margin-top: 37px;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 46px;
+  }
 }
