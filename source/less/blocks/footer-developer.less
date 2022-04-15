@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 37px;
-  margin-bottom: 40px;
 }
 
 .footer-developer__title {
@@ -11,6 +9,10 @@
   margin-right: 15px;
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .footer-developer__link {
@@ -27,5 +29,9 @@
       fill: @black;
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 10px;
   }
 }
