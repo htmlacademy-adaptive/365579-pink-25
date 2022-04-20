@@ -1,23 +1,64 @@
-.user-reviev {
-  span {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
+.user-reviev__container {
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
   }
 }
 
 .user-reviev__wrapper {
   background-color: @light-grey;
-  padding: 26px 10px 26px 17px;
+  padding: 18px 10px 19px 17px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 23px 23px 25px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 25px;
+  }
+}
+
+.user-reviev__small-card {
+  @media (min-width: @tablet-width) {
+    min-height: 73px;
+  }
 }
 
 .user-reviev__name {
+  font-style: normal;
   font-weight: 700;
   line-height: 24px;
+}
+
+.user-reviev__counter {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  &--likes {
+    font-weight: 400;
+    color: @bright-purplish-red;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 14px;
+    }
+  }
 }
 
 .user-reviev__text {
   margin: 0;
   line-height: 24px;
+}
+
+.user-reviev__stats {
+  padding-top: 12px;
+
+  &--first {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 13px;
+      right: 27px;
+    }
+  }
 }

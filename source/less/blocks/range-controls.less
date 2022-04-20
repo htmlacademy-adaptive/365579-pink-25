@@ -1,8 +1,32 @@
 .range-controls {
   position: absolute;
+  top: 56px;
+  right: 20px;
+
+  &--crop {
+    @media (min-width: @tablet-width) {
+      top: -7px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: @tablet-width) {
+      top: 66px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: @tablet-width) {
+      top: 136px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
-    right: 0;
+    right: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 30px;
   }
 }
 
@@ -20,12 +44,27 @@
   position: absolute;
   width: 14px;
   top: -6px;
-  height: 14px;
+  height: 15px;
   border: 2px solid @bright-purplish-red;
   box-sizing: border-box;
   border-radius: 50%;
-}
-
-.range-controls__max {
   left: 80%;
+
+  @media (min-width: @tablet-width) {
+    left: 79%;
+
+    &--fill {
+      left: 12%;
+    }
+
+    &--contrast {
+      left: 47%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--crop {
+      left: 80%;
+    }
+  }
 }

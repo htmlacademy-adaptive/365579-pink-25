@@ -5,12 +5,29 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 82px;
   }
-}
 
-.promo--page {
-  display: block;
+  &--page-index {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 81px;
+    }
+  }
+
+  &--page-catalog {
+    display: block;
+    padding-top: 28px;
+    padding-bottom: 76px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 64px;
+      padding-bottom: 128px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 58px;
+      padding-bottom: 88px;
+    }
+  }
 }
 
 .promo__wrapper {
@@ -64,6 +81,8 @@
 
     @media (min-width: @tablet-width) {
       width: 358px;
+      font-size: 50px;
+      line-height: 68px;
     }
   }
 
