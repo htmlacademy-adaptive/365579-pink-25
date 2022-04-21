@@ -1,5 +1,6 @@
 .input-text {
   display: block;
+  position: relative;
 
   span {
     margin-bottom: 4px;
@@ -34,5 +35,37 @@
   textarea {
     font-family: inherit;
     resize: none;
+  }
+
+  &--phone {
+    @media (min-width: @desktop-width) {
+      width: 371px;
+    }
+  }
+}
+
+.input-text__icon {
+  display: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 59px;
+  height: 59px;
+  background-color: @gray;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--phone {
+    background-image: url("../img/icons/phone-icon.svg");
+    background-size: 20px 19px;
+  }
+
+  &--email {
+    background-image: url("../img/icons/mail-icon.svg");
+    background-size: 18px 13px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

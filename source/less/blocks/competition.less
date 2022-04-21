@@ -62,7 +62,6 @@
   }
 
   span {
-    padding-left: 0;
     margin-right: 20px;
 
     @media (min-width: @tablet-width) {
@@ -183,8 +182,6 @@
 }
 
 .competition__contacts .competition__input-text {
-  width: 375px;
-
   &:not(:last-child) {
     @media (min-width: @tablet-width) {
       margin-bottom: 32px;
@@ -345,5 +342,13 @@
   @media (min-width: @tablet-width) {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+.competition__hide-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }

@@ -1,15 +1,24 @@
 .footer-wrapper {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
+  &--form {
+
+
+    @media (min-width: @tablet-width) {
+      padding-top: 45px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 33px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    padding-top: 61px;
-    padding-bottom: 40px;
+  &--index {
+    padding-top: 35px;
 
-    &--index {
-      padding-top: 35px;
+    @media (min-width: @desktop-width) {
+      padding-top: 61px;
+      padding-bottom: 40px;
     }
   }
 }

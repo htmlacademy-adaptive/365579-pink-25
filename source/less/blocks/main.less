@@ -1,5 +1,52 @@
+.main {
+  &--form {
+    padding-top: 44px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 91px;
+    }
+  }
+}
+
 .main__load-wrapper {
   @media (min-width: @desktop-width) {
     margin: 0 130px;
+  }
+}
+
+.main__description {
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: center;
+
+  span {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    width: 490px;
+
+    span {
+      display: inline;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 756px;
+  }
+}
+
+.main__competition {
+  padding-top: 34
+  px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 80px;
   }
 }
