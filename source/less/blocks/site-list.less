@@ -1,23 +1,25 @@
-.site-list__item {
-  list-style-type: none;
+.site-list {
+  .resetList();
+}
 
+.site-list__item {
   a {
     position: relative;
     display: block;
     padding: 16px 0;
-    color: @white;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    color: @white;
     background-color: @granite-gray;
     box-shadow: 0 1px 0 @black, inset 0 1px 0 @black-a1;
 
     @media (min-width: @desktop-width) {
       padding: 46px 0;
-      text-transform: none;
       font-weight: 400;
       font-size: 18px;
       line-height: 18px;
+      text-transform: none;
       background-color: inherit;
       box-shadow: none;
     }
@@ -50,7 +52,7 @@
         bottom: 34px;
         left: 0;
         height: 2px;
-        background: @white;
+        background-color: @white;
       }
     }
   }

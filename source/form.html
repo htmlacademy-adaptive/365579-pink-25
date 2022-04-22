@@ -14,7 +14,7 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="centered-wrapper main-nav__wrapper">
           <p class="header__logo">
-            <a class="logo">
+            <a class="logo" href="index.html">
               <svg width="147" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="logo__pink logo__unite"
                   d="M72.193 18.425c0-.333.133-.652.369-.89.237-.238.558-.376.897-.384h7.211c5.113 0 8.477 2.676 8.477 7.06v.06c0 4.798-4.078 7.286-8.899 7.286h-5.494v6.734a1.243 1.243 0 0 1-.332.965 1.286 1.286 0 0 1-.948.41 1.304 1.304 0 0 1-.949-.41 1.26 1.26 0 0 1-.332-.965V18.425Zm8.156 10.861c3.746 0 6.207-1.975 6.207-4.937v-.059c0-3.18-2.42-4.828-6.026-4.828h-5.725v9.785l5.544.04ZM94.019 18.267a1.243 1.243 0 0 1 .332-.965 1.286 1.286 0 0 1 .948-.41 1.304 1.304 0 0 1 .949.41 1.258 1.258 0 0 1 .332.965V38.29a1.245 1.245 0 0 1-.332.965 1.284 1.284 0 0 1-.949.41 1.304 1.304 0 0 1-.948-.41 1.26 1.26 0 0 1-.332-.965V18.267ZM103.199 18.297a1.25 1.25 0 0 1 .38-.868c.236-.23.553-.362.885-.367h.352c.261.005.516.075.743.203.226.127.416.31.552.528l13.751 17.23V18.237c0-.324.131-.636.364-.865a1.259 1.259 0 0 1 1.762 0c.233.23.364.54.364.865v20.094a1.117 1.117 0 0 1-.711 1.082 1.161 1.161 0 0 1-.454.083h-.13a1.739 1.739 0 0 1-.756-.23 1.709 1.709 0 0 1-.57-.54L105.67 21.09v17.24a1.238 1.238 0 0 1-.353.853c-.224.23-.529.366-.853.381a1.257 1.257 0 0 1-.871-.369 1.21 1.21 0 0 1-.354-.865V18.296h-.04ZM128.74 18.267a1.243 1.243 0 0 1 .332-.965 1.287 1.287 0 0 1 .949-.41 1.304 1.304 0 0 1 .948.41 1.247 1.247 0 0 1 .332.965v12.175l12.897-13.005c.264-.269.624-.428 1.004-.444.329.013.64.149.87.38.23.232.361.54.365.864a1.261 1.261 0 0 1-.421.889l-8.036 7.82 8.668 10.427c.227.258.352.587.352.928a1.287 1.287 0 0 1-.847 1.18 1.261 1.261 0 0 1-1.083-.08 1.23 1.23 0 0 1-.43-.409l-8.457-10.357-4.882 4.798v4.839a1.238 1.238 0 0 1-.373.886 1.282 1.282 0 0 1-.902.368 1.288 1.288 0 0 1-.902-.368 1.244 1.244 0 0 1-.374-.886V18.267h-.01Z"
@@ -132,18 +132,22 @@
       <div class="competition__contacts">
 
         <h3 class="competition__legend">Контактная информация</h3>
-        <label class="input-text competition__input-text input-text--phone competition__input-text--max">
-          <span>Номер телефона</span>
-          <input type="tel" name="phone" placeholder="Номер, пожалуйста">
-          <div class="input-text__icon input-text__icon--phone"></div>
-        </label>
-
-        <label class="input-text competition__input-text input-text--email competition__input-text--max">
-          <span>Адрес почты</span>
-          <input type="email" name="email" placeholder="Введите почту *" required>
-          <div class="input-text__icon input-text__icon--email"></div>
-        </label>
-
+        <div class="competition__container">
+          <label
+            class="input-text competition__input-text input-text--phone competition__input-text--max competition__input-text--phone">
+            <span>Номер телефона</span>
+            <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+          </label>
+          <div class="competition__icon competition__icon--phone"></div>
+        </div>
+        <div class="competition__container">
+          <label
+            class="input-text competition__input-text input-text--email competition__input-text--max competition__input-text--email">
+            <span>Адрес почты</span>
+            <input type="email" name="email" placeholder="Введите почту *" required>
+          </label>
+          <div class="competition__icon competition__icon--email"></div>
+        </div>
       </div>
 
 

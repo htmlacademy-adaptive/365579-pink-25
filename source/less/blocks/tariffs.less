@@ -1,20 +1,20 @@
 .tariffs {
   position: relative;
-  background-color: @light-grey;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   color: @granite-gray;
+  background-color: @light-grey;
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    transform: rotate(-180deg);
     width: 100%;
     height: 56px;
     background-color: @white;
+    transform: rotate(-180deg);
     clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 100%);
 
     @media (min-width: @tablet-width) {
@@ -29,10 +29,10 @@
 }
 
 .tariffs__wrapper {
-  overflow: hidden;
   padding: 0;
   padding-top: 136px;
   padding-bottom: 45px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;

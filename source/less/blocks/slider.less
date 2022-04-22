@@ -6,18 +6,18 @@
   display: none;
 
   @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 0;
     display: block;
-    padding: 0;
-    margin: 0;
     width: 41px;
     height: 41px;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
     border: none;
     background-color: @granite-gray;
+    transform: translateY(-50%);
     cursor: pointer;
-    position: absolute;
 
     /* stylelint-disable */
     -webkit-mask-image: url("../img/icons/left-arrow.svg");
