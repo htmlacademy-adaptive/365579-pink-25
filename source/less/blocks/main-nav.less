@@ -5,23 +5,21 @@
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
   position: absolute;
   top: 70px;
   left: 0;
-  z-index: 1;
   right: 0;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     top: 109px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
     top: 0;
     left: auto;
     right: 90px;
+    display: flex;
   }
 }
 
@@ -43,8 +41,8 @@
   width: 70px;
   height: 50px;
   background-color: transparent;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     top: 29px;
@@ -152,13 +150,13 @@
 }
 
 .main-nav--opened .centerer-wrapper {
-  background-color: @granite-gray;
+  width: 100%;
   padding: 0;
   margin: 0;
-  width: 100%;
+  background-color: @granite-gray;
 
   @media (min-width: @desktop-width) {
-    background-color: inherit;
     padding: 0 120px;
+    background-color: inherit;
   }
 }

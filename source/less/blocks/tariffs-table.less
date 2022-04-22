@@ -1,7 +1,7 @@
 .tariffs-table {
-  width: 350%;
   position: relative;
   left: 50%;
+  width: 350%;
   transform: translateX(-62.5%);
 
   @media (min-width: @tablet-width) {
@@ -15,10 +15,10 @@
 }
 
 .tariffs-table__head {
-  background-color: @granite-gray;
-  color: @white;
   text-align: center;
   text-transform: uppercase;
+  color: @white;
+  background-color: @granite-gray;
 }
 
 .tariffs-table__type {
@@ -45,8 +45,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 18px;
     padding-bottom: 26px;
+    font-size: 18px;
   }
 }
 
@@ -79,12 +79,12 @@
     position: absolute;
     top: 7px;
     left: 7px;
+    z-index: 1;
     width: 74px;
     height: 74px;
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
-    z-index: 1;
     transform: rotate(-45deg);
 
     @media (min-width: @tablet-width) {
@@ -111,10 +111,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 31px;
-    height: 21px;
     top: 20px;
     right: 16px;
+    width: 31px;
+    height: 21px;
     background-image: url("../img/icons/yes-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -125,8 +125,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      right: 104px;
       top: 17px;
+      right: 104px;
     }
   }
 
@@ -137,10 +137,10 @@
 
 .tariffs-table__cell {
   width: 276px;
-  background-color: @white;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+  background-color: @white;
 
   span {
     @media (min-width: @tablet-width) {
@@ -150,15 +150,15 @@
 
   @media (min-width: @tablet-width) {
     width: 152px;
-    text-transform: none;
     padding-left: 15px;
+    text-transform: none;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 18px;
     padding-left: 24px;
     padding-top: 13px;
     padding-bottom: 15px;
+    font-size: 18px;
   }
 }
 
@@ -166,10 +166,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 27px;
-    height: 27px;
     top: 14px;
     right: 20px;
+    width: 27px;
+    height: 27px;
     background-image: url("../img/icons/no-icon.svg");
     background-repeat: no-repeat;
     background-size: 100%;

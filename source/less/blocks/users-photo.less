@@ -1,36 +1,68 @@
 .users-photo__description {
-  margin: 0 auto;
   width: 250px;
-  padding-top: 54px;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 30px;
   line-height: 30px;
   text-align: center;
 
-  span {
-    display: block;
-    margin: 0 auto;
-    width: 254px;
+  @media (min-width: @tablet-width) {
+    width: 570px;
+    padding-top: 92px;
+    padding-bottom: 76px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 602px;
+    padding-bottom: 88px;
+  }
+
+  &--posting {
+    width: 255px;
+    padding-top: 18px;
+    padding-bottom: 43px;
 
     @media (min-width: @tablet-width) {
-      font-size: 18px;
-      width: 422px;
+      width: auto;
+      padding-top: 41px;
+      padding-bottom: 72px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 4px;
+      padding-bottom: 67px;
     }
   }
 
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-    width: 570px;
-  }
+  span {
+    display: block;
+    width: 254px;
+    margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-    width: 620px;
+    @media (min-width: @tablet-width) {
+      width: 422px;
+      font-size: 18px;
+    }
   }
 }
 
 .users-photo__reviews {
   margin: 0;
+  margin-bottom: 19px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.users-photo__reviews--first-reviews {
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .users-photo__photo--check {
@@ -67,6 +99,29 @@
   }
 }
 
+.users-photo__best-photo {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 6px 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @bright-purplish-red;
+
+  @media (min-width: @tablet-width) {
+    top: 58px;
+    right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 56px;
+    right: 129px;
+  }
+}
+
 .users-photo__info {
   width: 280px;
   margin: auto;
@@ -84,6 +139,7 @@
   @media (min-width: @desktop-width) {
     width: 986px;
     margin: auto;
+    padding: 0 13px;
   }
 }
 

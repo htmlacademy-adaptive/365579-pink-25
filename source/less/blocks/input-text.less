@@ -20,19 +20,25 @@
   textarea {
     display: block;
     box-sizing: border-box;
+    width: 100%;
     .fontfamily();
-    font-weight: 400;
+    padding: 15px 20px;
     font-size: 18px;
     line-height: 30px;
+    font-weight: 400;
     color: @granite-gray;
     border: 2px solid @gray;
     border-radius: 1px;
-    width: 100%;
-    padding: 15px 20px;
   }
 
   textarea {
     font-family: inherit;
     resize: none;
+  }
+
+  &--phone {
+    @media (min-width: @desktop-width) {
+      width: 371px;
+    }
   }
 }

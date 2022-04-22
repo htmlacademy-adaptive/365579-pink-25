@@ -1,21 +1,39 @@
-.photo-load__form {
-  padding-bottom: 41px;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
-
-  @media (min-width: @desktop-width) {
-    justify-content: space-around;
-  }
-}
-
 .photo-load {
   background-color: @light-grey;
 }
 
+.photo-load__container {
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 0;
+  }
+}
+
+.photo-load__form {
+  padding-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 56px;
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+    padding-bottom: 34px;
+  }
+}
+
 .photo-load__photo {
   padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 46px;
+  }
 }
 
 .photo-load__link {
@@ -33,27 +51,33 @@
 }
 
 .photo-load__filter {
-  display: flex;
   position: relative;
-  justify-content: center;
-  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .resetList();
   margin-top: 43px;
   margin-bottom: 65px;
-  padding: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     justify-content: start;
     margin-top: 0;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: start;
+    margin-bottom: 136px;
   }
 }
 
 .photo-load__range {
-  display: none;
   position: relative;
-  margin: 27px auto;
+  display: none;
   width: 240px;
   height: 2px;
+  margin: 27px auto;
   background-color: @granite-gray;
 
   @media (min-width: @tablet-width) {
@@ -65,15 +89,17 @@
   }
 }
 
-.photo-load__button__wrapper {
+.photo-load__button-wrapper {
+  padding-top: 45px;
+
   @media (min-width: @tablet-width) {
-    margin-left: 40px;
-    padding-top: 85px;
+    margin-left: 47px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 454px;
     display: flex;
+    width: 454px;
     margin: 0;
   }
 }
@@ -85,9 +111,11 @@
 
   @media (min-width: @tablet-width) {
     width: 260px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin-left: 44px;
   }
 }
