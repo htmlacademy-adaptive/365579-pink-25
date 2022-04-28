@@ -74,8 +74,12 @@
       <blockquote class="users-photo__reviews users-photo__reviews--first-reviews">
         <div class="users-photo__photo users-photo__photo--check">
           <a class="users-photo__link" href="#">
-            <img class="users-photo__img users-photo__img--panoram" src="img/panorama.jpg" alt="Вид панорамы"
-              width="320" height="137">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="users-photo__img users-photo__img--panoram" src="img/panorama.jpg" alt="Вид панорамы"
+                width="320" height="137" srcset="img/panorama@2x.jpg">
+            </picture>
           </a>
           <span class="users-photo__best-photo">Панорама дня</span>
         </div>
@@ -105,7 +109,12 @@
           <blockquote class="users-photo__reviews">
             <div class="users-photo__photo">
               <a class="users-photo__link" href="#">
-                <img class="users-photo__img" src="img/car.jpg" alt="Фото белой машины" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/car-desktop.jpg 1x, img/car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/car-tablet.jpg 1x, img/car-tablet@2x.jpg 2x">
+                  <img class="users-photo__img" src="img/car.jpg" alt="Фото белой машины" width="280" height="180"
+                    srcset="img/car@2x.jpg">
+                </picture>
               </a>
             </div>
 
@@ -133,7 +142,12 @@
           <blockquote class="users-photo__reviews">
             <div class="users-photo__photo">
               <a class="users-photo__link" href="#">
-                <img class="users-photo__img" src="img/drums.jpg" alt="Барабанная установка" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/drums-desktop.jpg 1x, img/drums-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/drums-tablet.jpg 1x, img/drums-tablet@2x.jpg 2x">
+                  <img class="users-photo__img" src="img/drums.jpg" alt="Барабанная установка" width="280" height="180"
+                    srcset="img/drums@2x.jpg">
+                </picture>
               </a>
             </div>
             <div class="users-photo__info user-review">
@@ -160,7 +174,13 @@
           <blockquote class="users-photo__reviews">
             <div class="users-photo__photo">
               <a class="users-photo__link" href="#">
-                <img class="users-photo__img" src="img/windows-img.jpg" alt="Витражное окно" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/windows-desktop.jpg 1x, img/windows-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/windows-tablet.jpg 1x, img/windows-tablet@2x.jpg 2x">
+                  <img class="users-photo__img" src="img/windows-img.jpg" alt="Витражное окно" width="280" height="180"
+                    srcset="img/windows-img@2x.jpg">
+                </picture>
               </a>
             </div>
             <div class="users-photo__info user-review">
@@ -188,7 +208,12 @@
           <blockquote class="users-photo__reviews">
             <div class="users-photo__photo">
               <a class="users-photo__link" href="#">
-                <img class="users-photo__img" src="img/market.jpg" alt="Фото рынка" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/market-desktop.jpg 1x, img/market-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/market-tablet.jpg 1x, img/market-tablet@2x.jpg 2x">
+                  <img class="users-photo__img" src="img/market.jpg" alt="Фото рынка" width="280" height="180"
+                    srcset="img/market@2x.jpg">
+                </picture>
               </a>
             </div>
             <div class="users-photo__info user-review">
@@ -215,7 +240,12 @@
           <blockquote class="users-photo__reviews">
             <div class="users-photo__photo">
               <a class="users-photo__link" href="#">
-                <img class="users-photo__img" src="img/legs.jpg" alt="Фото ног" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/legs-desktop.jpg 1x, img/legs-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/legs-tablet.jpg 1x, img/legs-tablet@2x.jpg 2x">
+                  <img class="users-photo__img" src="img/legs.jpg" alt="Фото ног" width="280" height="180"
+                    srcset="img/legs@2x.jpg">
+                </picture>
               </a>
             </div>
             <div class="users-photo__info user-review">
@@ -242,7 +272,14 @@
           <blockquote class="users-photo__reviews">
             <div class="users-photo__photo">
               <a class="users-photo__link" href="#">
-                <img class="users-photo__img" src="img/airplane.jpg" alt="Крыло самотлета" width="280" height="180">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/airplane-desktop.jpg 1x, img/airplane-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/airplaneairplane-tablet.jpg 1x, img/airplane-tablet@2x.jpg 2x">
+                  <img class="users-photo__img" src="img/airplane.jpg" alt="Крыло самотлета" width="280" height="180"
+                    srcset="img/airplane@2x.jpg">
+                </picture>
               </a>
             </div>
             <div class="users-photo__info user-review">
@@ -278,7 +315,10 @@
         <form class="photo-load__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="photo-load__photo">
             <a class="photo-load__link" href="#">
-              <img src="img/winter.png" alt="Зима" width="280" height="374">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/winter-tablet.png 1x, img/winter-tablet@2x.png 2x">
+                <img src="img/winter.png" alt="Зима" width="280" height="374" srcset="img/winter@2x.png">
+              </picture>
             </a>
           </div>
 
