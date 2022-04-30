@@ -1,0 +1,133 @@
+.popup {
+  position: absolute;
+  left: 0;
+  display: none;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 1px;
+  background-color: @white;
+  box-shadow: 0 7px 15px 0 @black-15;
+
+
+  &--error {
+    top: 38.3%;
+    width: 100%;
+  }
+
+  &--success {
+    top: 61%;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    left: 99px;
+
+    &--error {
+      top: 13%;
+    }
+
+    &--success {
+      top: 34.4%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+
+    &--error {
+      top: 21%;
+    }
+
+    &--success {
+      top: 55.5%;
+    }
+  }
+}
+
+.popup__title {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 320px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.popup__text {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 320px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 390px;
+    margin-bottom: 38px;
+
+    &--ok {
+      margin-bottom: 58px;
+    }
+  }
+}
+
+.popup__button-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 4px;
+  padding-bottom: 51px;
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding-top: 50px;
+    background-color: @light-grey;
+  }
+
+  &--close {
+    padding-top: 50px;
+    background-color: @light-grey;
+
+    @media (min-width: @tablet-width) {
+      width: auto;
+    }
+  }
+}
+
+.popup__button {
+  margin: 0 auto;
+
+  &--ok {
+    padding: 15px 125px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 134px;
+      padding-right: 134px;
+    }
+  }
+
+  &--close {
+    padding: 15px 66px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 75px;
+      padding-right: 75px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 155px;
+      padding-right: 155px;
+    }
+  }
+}
