@@ -17,11 +17,30 @@
   &--pink {
     color: @bright-purplish-red;
     border-color: @bright-purplish-red;
+
+    &:hover {
+      color: @white;
+      background-color: @bright-purplish-red;
+    }
+
+    &:active {
+      color: @white-a3;
+      background-color: @bright-purplish-red;
+    }
   }
 
   &--silver {
-    color: @granite-gray;
-    border-color: @granite-gray;
-    opacity: 0.1;
+    color: @granite-gray-a1;
+    border-color: @granite-gray-a1;
+
+    &:hover {
+      border-color: @granite-gray-a3;
+    }
+
+    &:active {
+      color: @white-a3;
+      background-color: @granite-gray-a3;
+      border-color: @granite-gray-a3;
+    }
   }
 }

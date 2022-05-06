@@ -26,6 +26,14 @@
     background-color: @white;
   }
 
+  span:hover::before {
+    border: 2px solid @granite-gray;
+  }
+
+  span:active::before {
+    border: 2px solid @bright-purplish-red;
+  }
+
   input:checked + span::before {
     background-position: 7px 9px;
     background-repeat: no-repeat;

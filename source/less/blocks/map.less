@@ -28,6 +28,29 @@
       background-image: url("../img/triangle-white-desktop.svg");
     }
   }
+
+  ::after {
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 44%;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/map-label.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+
+    @media (min-width: @tablet-width) {
+      top: 55%;
+      left: 47%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 54%;
+      left: 48.5%;
+    }
+  }
 }
 
 .map__img {

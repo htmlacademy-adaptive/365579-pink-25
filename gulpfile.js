@@ -14,34 +14,33 @@ import del from 'del';
 import browser from 'browser-sync';
 
 // Styles
-
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
+  .pipe(plumber())
+  .pipe(less())
+  .pipe(postcss([
+    autoprefixer(),
+    csso()
+  ]))
+  .pipe(rename('style.min.css'))
+  .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+  .pipe(browser.stream());
 }
 
 // HTML
-
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'))
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('build'))
 }
 
 //Scripts
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
-    .pipe(terser())
-    .pipe(gulp.dest('build/js'))
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'))
+  .pipe(browser.stream());
 }
 
 //Images
@@ -66,7 +65,7 @@ const createWebp = () => {
 }
 
 //SVG
-const svg = () => 
+const svg = () =>
 gulp.src(['source/img/**/*.svg', '!source/img/icons/sprites/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
@@ -94,7 +93,7 @@ const copy = (done) => {
   ], {
     base: 'source'
   })
-    .pipe(gulp.dest('build'))
+  .pipe(gulp.dest('build'))
   done();
 }
 
